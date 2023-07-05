@@ -125,6 +125,10 @@ a {
     padding: .5rem;
 }
 
+.heart:hover {
+    color: red;
+}
+
 .discount {
     background-color: var(--bld-discount);
 }
@@ -148,6 +152,9 @@ a {
 
 #site_header {
     background-color: var(--bld-primary);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 #site_header .navbar,
@@ -216,6 +223,21 @@ a {
     position: relative;
 }
 
+#site_main .card a{
+color: var(--bld-black);}
+
+#site_main .card:hover .img-primary {
+    display: none;
+}
+
+#site_main .card .img-secondary {
+    display: none;
+}
+
+#site_main .card:hover .img-secondary {
+    display: inline-block;
+}
+
 #site_main .heart {
     position: absolute;
     top: 3%;
@@ -259,6 +281,9 @@ a {
 #site_footer .inlined-list li a {
     color: var(--bld-white);
 }
+
+#site_footer .social i{
+color: var(--bld-white);}
 
 #site_footer .social i{
     padding-right: .3rem;
