@@ -63,7 +63,6 @@ a {
     border: 1px dotted black;
     height: 800px;
     background-color: palegreen;
-    padding: 1rem;
 }
 
 .debug .card,
@@ -113,6 +112,30 @@ a {
 
 .py-3 {
     padding: 3rem 0;
+}
+
+/* miscellaneous */
+
+.heart {
+    background-color: var(--bld-white);
+    padding: .5rem;
+}
+
+.discount {
+    background-color: var(--bld-discount);
+}
+
+.final-price {
+    color: var(--bld-discount)
+}
+
+.sustainability {
+    background-color: var(--bld-sustainability);
+}
+
+.discount,
+.sustainability {
+    color: var(--bld-white);
 }
 
 /* #endregion utilities */
@@ -165,6 +188,42 @@ a {
 #site_main .row {
     flex-wrap: wrap;
 }
+
+#site_main [class^="col-"] {
+    padding: 1rem;
+}
+
+#site_main img {
+    max-width: 100%;
+}
+
+#site_main .details {
+    display: flex;
+    gap: .2rem;
+}
+
+#site_main .discount,
+#site_main .sustainability {
+    font-size: .75rem;
+    padding: .25rem .5rem;
+}
+
+#site_main .card {
+    position: relative;
+}
+
+#site_main .heart {
+    position: absolute;
+    top: 3%;
+    right: 0;
+}
+
+#site_main .details {
+    position: absolute;
+    left: 0;
+    top: 75%;
+}
+
 
 /* #endregion main */
 
