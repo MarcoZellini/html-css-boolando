@@ -15,6 +15,14 @@
     --bld-sustainability: #008000;
 }
 
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
 .container {
     max-width: 1170px;
     width: 80%;
@@ -70,7 +78,7 @@
 
 
 
-/* #region debug */
+/* #endregion debug */
 
 /* #region utilities */
 
@@ -87,9 +95,23 @@
     width: calc(100%/12 * 8);
 }
 
+/* lists */
+
+.unstyled-list {
+    list-style: none;
+}
+
+.inlined-list {
+    display: flex;
+}
+
 /* spacing */
 
-.py-3{
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-3 {
     padding: 3rem 0;
 }
 
@@ -99,6 +121,41 @@
 
 #site_header {
     background-color: var(--bld-primary);
+}
+
+#site_header .navbar,
+#site_header .logo,
+#site_header .tools {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#site_header .inlined-list {
+    color: var(--bld-white);
+}
+
+#site_header .navbar li {
+    padding-right: .5rem;
+}
+
+#site_header a {
+    color: var(--bld-white);
+}
+
+
+#site_header .logo {
+    justify-content: center;
+}
+
+#site_header .tools {
+    flex-direction: row-reverse;
+    gap: .5rem;
+}
+
+
+#site_header .logo img {
+    height: 30px;
 }
 
 /* #endregion header */
