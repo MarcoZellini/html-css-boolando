@@ -1,0 +1,125 @@
+/* #region commons */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bld-black: #000000;
+    --bld-white: #ffffff;
+    --bld-primary: #ff6900;
+    --bld-dark: #1a1a1a;
+    --bld-discount: #ff0000;
+    --bld-sustainability: #008000;
+}
+
+.container {
+    max-width: 1170px;
+    width: 80%;
+    margin: auto
+}
+
+.row {
+    display: flex;
+}
+
+/* #endregion commons */
+
+
+/* #region debug */
+
+.debug #site_header {
+    min-height: 75px;
+}
+
+.debug .container {
+    min-height: 75px;
+    background-color: yellow;
+}
+
+.debug .row {
+    /* min-height: 75px; */
+    width: 100%;
+    background-color: red;
+}
+
+.debug [class^="col-"] {
+    border: 1px dotted black;
+    height: 75px;
+    background-color: palegreen;
+}
+
+.debug #site_main [class^="col-"] {
+    border: 1px dotted black;
+    height: 800px;
+    background-color: palegreen;
+    padding: 1rem;
+}
+
+.debug .card,
+.debug .navbar,
+.debug .logo,
+.debug .info,
+.debug .tools {
+    width: 100%;
+    height: 100%;
+    background-color: palevioletred;
+}
+
+
+
+/* #region debug */
+
+/* #region utilities */
+
+/* columns */
+.col-2 {
+    width: calc(100%/12 * 2);
+}
+
+.col-4 {
+    width: calc(100%/12 * 4);
+}
+
+.col-8 {
+    width: calc(100%/12 * 8);
+}
+
+/* spacing */
+
+.py-3{
+    padding: 3rem 0;
+}
+
+/* #endregion utilities */
+
+/* #region header */
+
+#site_header {
+    background-color: var(--bld-primary);
+}
+
+/* #endregion header */
+
+/* #region main */
+
+#site_main .row {
+    flex-wrap: wrap;
+}
+
+/* #endregion main */
+
+/* #region footer */
+
+#site_footer {
+    background-color: var(--bld-dark);
+    color: var(--bld-white)
+}
+
+#site_footer .row {
+    justify-content: space-between;
+}
+
+/* #endregion footer */
