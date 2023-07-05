@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family:  sans-serif;
 }
 
 a {
@@ -88,6 +88,10 @@ a {
 
 .col-4 {
     width: calc(100%/12 * 4);
+}
+
+.col-5 {
+    width: calc(100%/12 * 5);
 }
 
 .col-8 {
@@ -236,6 +240,28 @@ a {
 
 #site_footer .row {
     justify-content: space-between;
+}
+
+#site_footer .info h4,
+#site_footer .card h5 {
+    padding-bottom: 1rem;
+}
+
+#site_footer .inlined-list {
+    font-size: .9rem;
+    gap: .5rem;
+}
+
+#site_footer .inlined-list li {
+    display: inline;
+}
+
+#site_footer .inlined-list li a {
+    color: var(--bld-white);
+}
+
+#site_footer .social i{
+    padding-right: .3rem;
 }
 
 /* #endregion footer */
