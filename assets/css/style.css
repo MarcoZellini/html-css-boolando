@@ -139,6 +139,10 @@ a {
     background-color: var(--bld-discount);
 }
 
+.price {
+    text-decoration: line-through;
+}
+
 .final-price {
     color: var(--bld-discount)
 }
