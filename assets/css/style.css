@@ -152,7 +152,7 @@ a {
 
 #site_header {
     background-color: var(--bld-primary);
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 100;
 }
