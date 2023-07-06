@@ -23,16 +23,6 @@ a {
     text-decoration: none;
 }
 
-.container {
-    max-width: 1170px;
-    width: 80%;
-    margin: auto
-}
-
-.row {
-    display: flex;
-}
-
 /* #endregion commons */
 
 
@@ -81,6 +71,18 @@ a {
 
 /* #region utilities */
 
+/* structure */
+
+.container {
+    max-width: 1170px;
+    width: 80%;
+    margin: auto
+}
+
+.row {
+    display: flex;
+}
+
 /* columns */
 .col-2 {
     width: calc(100%/12 * 2);
@@ -116,6 +118,10 @@ a {
 
 .py-3 {
     padding: 3rem 0;
+}
+
+.px-1 {
+    padding: 0 1rem;
 }
 
 /* miscellaneous */
@@ -176,7 +182,6 @@ a {
 #site_header a {
     color: var(--bld-white);
 }
-
 
 #site_header .logo {
     justify-content: center;
